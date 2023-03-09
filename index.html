@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
+  <title>Practica 4</title>
+</head>
+<body>
+  <main>
+    <div class="contenedor">
+      <form action="" class="forms">
+        <label for="cedula">Ingresa la cédula:</label>
+        <div class="input">
+          <input type="text" name="cedula" id="insertarCedula" required minlength="11" maxlength="11" size="2" onkeypress="/[0-9]/.test(event.key) || event.preventDefault()">
+          <p id="parrafoTexto" class="ocultar colorValido"><span class="colorTexto ocultar">Texto</span></p>
+        </div>
+        <div class="button">
+          <button onclick="mostrar()" type="button">Validar</button>
+          <input type="reset" value="Borrar">
+        </div>
+      </form>
+    </div>
+  </main>
+</body>
+</html>
